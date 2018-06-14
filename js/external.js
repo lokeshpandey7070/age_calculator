@@ -87,9 +87,21 @@
 
                 y_year=c_year-d_year;
 
+                if(y_year<0 || y_month<0 || y_date<0 )
+                {
+                      alert("current date should be \n greater then or equal to your dob");
+                      return false;
+                }
+                else
+                {
+
+
+
+
                 disp_year.innerHTML=y_year+" Year";
                 disp_month.innerHTML=y_month+"  Month";
                 disp_days.innerHTML=y_date+"  Days";
+                }
         }
 
         function clr()
